@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style media="screen">
+    .jumbotron {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+
+    .alert {
+      margin: 0px;
+    }
+  </style>
+
+  <title></title>
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+  <center>
+    <h3 class='alert alert-success' style="margin-bottom:0px;">About Us !</h3>
+  </center>
+  <div class="jumbotron" style="margin-bottom: 0px;margin-top: 0px;">
+    <h1 class="display-4">ERO MOTORS</h1>
+    <h1 class="display-4">Authorized Service Station</h1>
+    <p class="lead">
+
+      Heavy vehicle service refers to the maintenance and repair of large commercial vehicles, such as trucks, buses, and trailers. These vehicles are used to transport goods and people over long distances and are subject to significant wear and tear, making regular service and repairs essential to ensure their safe and efficient operation.
+      
+      Heavy vehicle service can include a range of tasks, such as routine maintenance, diagnostics, and repairs. This may involve checking and replacing engine oil, inspecting and replacing filters, lubricating components, adjusting brakes, checking tires and wheels, and performing engine tune-ups.
+      
+      Other common services for heavy vehicles include electrical and electronic diagnostics and repairs, air conditioning service and repair, brake system repairs, steering and suspension repairs, and engine and transmission overhauls. These services require specialized knowledge and equipment, as well as experienced technicians who understand the unique needs of heavy vehicles.
+      
+      Regular heavy vehicle service is essential for ensuring the safety and reliability of these vehicles, reducing the risk of breakdowns, and extending their lifespan. By working with a trusted heavy vehicle service provider, fleet operators can minimize downtime and maintenance costs, and keep their vehicles running at peak performance.</p>
+    <hr class="my-4">
+    <p>Explore our Website.</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">HOME</a>
+    </p>
+  </div>
+  <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/1.png" %}" width="120" height="80" alt="ferrari" />
+    <img src="{% static "images/2.png" %}" width="120" height="80" alt="ford" />
+   <img src="{% static "images/3.png" %}" width="120" height="80" alt="lambo" />
+   <img src="{% static "images/4.png" %}" width="120" height="80" alt="mahindra" />
+   <img src="{% static "images/5.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/6.png" %}" width="120" height="80" alt="tata" />
+   <img src="{% static "images/7.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/8.png" %}" width="120" height="80" alt="rolls" />
+   <img src="{% static "images/9.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>
